@@ -4,10 +4,28 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <title>404</title>
   <link rel="icon" href="/favicon.ico">
+  <style>
+    body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    body > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      flex-direction: column;
+    }
+  </style>
 </head>
 <body>
-<div align="center" display="flex">
+<div>
   <img src="/img/404.png"/>
+  <div><a onclick="location.reload()">刷新</a><a onclick="history.back()">返回上一页</a></div>
 </div>
 </body>
 </html>
