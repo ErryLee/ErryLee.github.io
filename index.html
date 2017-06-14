@@ -42,7 +42,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/avator.png" class="js-avatar">
+			<img src="/img/avatar.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Erry Lee</a></h1>
@@ -102,7 +102,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/avator.png" class="js-avatar">
+				<img src="/img/avatar.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Erry Lee</h1>
@@ -191,11 +191,11 @@
 <p>下面开始进行详细的介绍</p>
 <h3 id="Github-page"><a href="#Github-page" class="headerlink" title="Github page"></a>Github page</h3><p>登录自己的github账号，在首页右上角点击new repository</p>
 <p> <img src="/images/hexo/git.png" alt="git"></p>
-<p>创建的repository name 必须为 username.github.io，例如我自己的就是 errylee.github.io，然后在该repository的settings中将Github Pages的Source 设置为 Master</p>
+<p>创建的repository name 必须为 username.github.io，例如我自己的就是 errylee.github.io，然后在该repository的settings中将Github Pages的Source 设置为 master branch</p>
 <p><img src="/images/hexo/git2.png" alt="git"></p>
 <h3 id="Hexo初始化博客"><a href="#Hexo初始化博客" class="headerlink" title="Hexo初始化博客"></a>Hexo初始化博客</h3><p> 我们已经安装好了hexo，接下来在本地创建好自己的博客文件夹例如User/erry/Myblog，然后调出Mac下的终端工具，cd到该目录下，执行<code>hexo init</code>，然后修改 根目录下的_config.yml文件中deploy属性为：</p>
 <p> <img src="/images/hexo/config.png" alt="config"></p>
-<p>需要注意的是冒号后边必须加个空格，最后执行：<code>npm i hexo-deployer-git --save</code><br>接下来就可以通过hexo的内置命令来写博客了：</p>
+<p>需要注意的是冒号后边必须加个空格，其中repo为你创建的github page的repository的https地址，最后执行：<code>npm i hexo-deployer-git --save</code><br>接下来就可以通过hexo的内置命令来写博客了：</p>
 <ul>
 <li><p><code>hexo new &quot;我的第一篇博客&quot;</code>，创建一篇文章</p>
 </li>
@@ -217,6 +217,10 @@
 <p>创建成功后，在新页面点击Install Disqus，Platform选择为Universal Code，拉到页面最下面点击按钮即可。</p>
 <p>然后点击Configure Disqus，将Website Name改为你想要的名称，我的为ErryLee，URL设置为你的Github page地址，然后完成。</p>
 <p><img src="/images/hexo/disqus3.png" alt="disqus3"></p>
+<p>基本上所有步骤都进行完了，你可以依次执行clean，generate和deploy来部署。</p>
+<h3 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h3><p>在主题目录下的_config.yml文件中可以添加头像以及博客的icon分别对应avatar和favicon属性，你可以在根目录的source文件夹下添加images文件夹来添加一些自己制作的图片。</p>
+<p>另外在主题目录下的source文件夹中可以添加自己的404页面：404.html。配置文件中只能修改一小部分样式，你可以到相关的css文件中自己进行随意的修改，如果是webpack项目，记得执行打包命令。</p>
+<p>其他内容我自己还没有涉及到，后期遇到也会进行补充的，多谢大家</p>
 
       
 
