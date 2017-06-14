@@ -6,15 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>tags | ErryLee的博客</title>
+  <title>Github博客教程 | ErryLee的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="文章主要描述了利用github page，hexo静态博客框架以及disqus来搭建个人静态博客的详细步骤。 github page用来搭建博客的主页，hexo用来更改博客主题、发布文章等等，并通过配置文件和Disqus来添加评论功能。 具体步骤如下 环境要求 安装Node,官网下载安装，用来生成静态页面  安装Hexo,sudo npm install hexo -g，一个基于node的开源静">
+<meta name="keywords" content="github,hexo,disqus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github博客教程">
+<meta property="og:url" content="http://yoursite.com/2017/06/14/Github博客教程/index.html">
 <meta property="og:site_name" content="ErryLee的博客">
-<meta property="og:updated_time" content="2017-06-14T03:59:59.000Z">
+<meta property="og:description" content="文章主要描述了利用github page，hexo静态博客框架以及disqus来搭建个人静态博客的详细步骤。 github page用来搭建博客的主页，hexo用来更改博客主题、发布文章等等，并通过配置文件和Disqus来添加评论功能。 具体步骤如下 环境要求 安装Node,官网下载安装，用来生成静态页面  安装Hexo,sudo npm install hexo -g，一个基于node的开源静">
+<meta property="og:image" content="http://yoursite.com/images/hexo/git.png">
+<meta property="og:image" content="http://yoursite.com/images/hexo/git2.png">
+<meta property="og:image" content="http://yoursite.com/images/hexo/config.png">
+<meta property="og:image" content="http://yoursite.com/images/hexo/disqus2.png">
+<meta property="og:image" content="http://yoursite.com/images/hexo/disqus3.png">
+<meta property="og:updated_time" content="2017-06-14T11:42:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="Github博客教程">
+<meta name="twitter:description" content="文章主要描述了利用github page，hexo静态博客框架以及disqus来搭建个人静态博客的详细步骤。 github page用来搭建博客的主页，hexo用来更改博客主题、发布文章等等，并通过配置文件和Disqus来添加评论功能。 具体步骤如下 环境要求 安装Node,官网下载安装，用来生成静态页面  安装Hexo,sudo npm install hexo -g，一个基于node的开源静">
+<meta name="twitter:image" content="http://yoursite.com/images/hexo/git.png">
   
     <link rel="alternative" href="/atom.xml" title="ErryLee的博客" type="application/atom+xml">
   
@@ -154,27 +164,69 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-Github博客教程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      tags
+      Github博客教程
     </h1>
   
 
         
-        <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2017-06-14T03:59:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
+        <a href="/2017/06/14/Github博客教程/" class="archive-article-date">
+  	<time datetime="2017-06-14T06:47:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p> 文章主要描述了利用github page，hexo静态博客框架以及disqus来搭建个人静态博客的详细步骤。<br> github page用来搭建博客的主页，hexo用来更改博客主题、发布文章等等，并通过配置文件和Disqus来添加评论功能。<br> 具体步骤如下</p>
+<h3 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h3><ul>
+<li><p>安装Node,<a href="https://nodejs.org/" target="_blank" rel="external">官网</a>下载安装，用来生成静态页面</p>
+</li>
+<li><p>安装Hexo,<code>sudo npm install hexo -g</code>，一个基于node的开源静态博客框架</p>
+</li>
+<li><p>安装Git,Mac系统可以直接下载安装<a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="external">下载链接</a></p>
+</li>
+<li><p>github账号，没有可以自行注册，配置sshkey，可以搜索相关教程</p>
+</li>
+<li><p>Disqus账号，同上，注册很简单，但需要翻墙，可以下载免费版蓝灯，github项目地址 <a href="https://github.com/getlantern/lantern" target="_blank" rel="external">lantern下载地址</a></p>
+</li>
+</ul>
+<p>下面开始进行详细的介绍</p>
+<h3 id="Github-page"><a href="#Github-page" class="headerlink" title="Github page"></a>Github page</h3><p>登录自己的github账号，在首页右上角点击new repository</p>
+<p> <img src="/images/hexo/git.png" alt="git"></p>
+<p>创建的repository name 必须为 username.github.io，例如我自己的就是 errylee.github.io，然后在该repository的settings中将Github Pages的Source 设置为 Master</p>
+<p><img src="/images/hexo/git2.png" alt="git"></p>
+<h3 id="Hexo初始化博客"><a href="#Hexo初始化博客" class="headerlink" title="Hexo初始化博客"></a>Hexo初始化博客</h3><p> 我们已经安装好了hexo，接下来在本地创建好自己的博客文件夹例如User/erry/Myblog，然后调出Mac下的终端工具，cd到该目录下，执行<code>hexo init</code>，然后修改 根目录下的_config.yml文件中deploy属性为：</p>
+<p> <img src="/images/hexo/config.png" alt="config"></p>
+<p>需要注意的是冒号后边必须加个空格，最后执行：<code>npm i hexo-deployer-git --save</code><br>接下来就可以通过hexo的内置命令来写博客了：</p>
+<ul>
+<li><p><code>hexo new &quot;我的第一篇博客&quot;</code>，创建一篇文章</p>
+</li>
+<li><p><code>hexo clean</code> 清除静态页面缓存</p>
+</li>
+<li><p><code>hexo generate</code> 简写为 <code>hexo g</code> 生成静态页面</p>
+</li>
+<li><p><code>hexo deploy</code> 简写为 <code>hexo d</code> 部署到github page，可以和上一步合在一起为 <code>hexo g -d</code></p>
+</li>
+<li><p><code>hexo server</code> 在本地进行博客预览</p>
+</li>
+</ul>
+<p>hexo框架的默认主题是landscape，你可以通过在 <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">主题列表</a> 里下载好自己喜欢的主题，将该主题文件放到根目录下的themes文件夹下，例如 <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-yilia</a>，可以将文件夹名改为yilia，然后在根目录下的_config.yml中将theme改为<code>theme: yilia</code>.</p>
+<p>第一次进行deploy时需要的时间比较长，大约10分钟左右，以后每次执行完<code>hexo clean</code>，<code>hexo g -d</code>命令，可以立即刷新页面查看</p>
+<p>根目录下的_config.yml和配置的theme目录下的_config.yml中有很多和页面相关的样式和功能配置，可以查看相关主题github主页的相关教程进行配置，当然你也可以自己修改下载好的theme下的样式和页面模板，对自己的页面进行调整。</p>
+<h3 id="Disqus评论模块的添加"><a href="#Disqus评论模块的添加" class="headerlink" title="Disqus评论模块的添加"></a>Disqus评论模块的添加</h3><p>以我自己博客所选主题yilia为例，在 themes/yilia/路径下的_config.yml文件中，添加disqus相关项 <code>disqus_shortname: ErryLee</code>，ErryLee为你在Disqus上配置的site的shorname（接下来会配置shortname），Disqus的配置步骤如下:</p>
+<p><a href="https://blog.disqus.com/" target="_blank" rel="external">Disqus网址</a>，注册完账号登录后点击右上角Home跳转到主页，然后点击齿轮按钮选择<a href="https://disqus.com/features/engage/" target="_blank" rel="external">Add Dusqus To Site</a>，跳转后拉到页面最下方，点<a href="https://disqus.com/profile/signup/" target="_blank" rel="external">GET STARTED</a>，再次跳转后选择<a href="https://disqus.com/admin/create/" target="_blank" rel="external">I want to install Disqus on my site</a>，然后在新页面中填写你的github page的地址、类型和语言，如下图：</p>
+<p><img src="/images/hexo/disqus2.png" alt="disqus"></p>
+<p>创建成功后，在新页面点击Install Disqus，Platform选择为Universal Code，拉到页面最下面点击按钮即可。</p>
+<p>然后点击Configure Disqus，将Website Name改为你想要的名称，我的为ErryLee，URL设置为你的Github page地址，然后完成。</p>
+<p><img src="/images/hexo/disqus3.png" alt="disqus3"></p>
+
       
 
       
@@ -213,6 +265,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">disqus</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -263,7 +334,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/tags/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/14/Github博客教程/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -308,7 +379,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
