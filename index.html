@@ -8,12 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>ErryLee的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="github 博客，hexo 博客搭建">
+<meta property="og:type" content="website">
 <meta property="og:title" content="ErryLee的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="ErryLee的博客">
+<meta property="og:description" content="github 博客，hexo 博客搭建">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ErryLee的博客">
+<meta name="twitter:description" content="github 博客，hexo 博客搭建">
   
     <link rel="alternative" href="/atom.xml" title="ErryLee的博客" type="application/atom+xml">
   
@@ -211,8 +214,8 @@
 <p>hexo框架的默认主题是landscape，你可以通过在 <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">主题列表</a> 里下载好自己喜欢的主题，将该主题文件放到根目录下的themes文件夹下，例如 <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-yilia</a>，可以将文件夹名改为yilia，然后在根目录下的_config.yml中将theme改为<code>theme: yilia</code>.</p>
 <p>第一次进行deploy时需要的时间比较长，大约10分钟左右，以后每次执行完<code>hexo clean</code>，<code>hexo g -d</code>命令，可以立即刷新页面查看</p>
 <p>根目录下的_config.yml和配置的theme目录下的_config.yml中有很多和页面相关的样式和功能配置，可以查看相关主题github主页的相关教程进行配置，当然你也可以自己修改下载好的theme下的样式和页面模板，对自己的页面进行调整。</p>
-<h3 id="Disqus评论模块的添加"><a href="#Disqus评论模块的添加" class="headerlink" title="Disqus评论模块的添加"></a>Disqus评论模块的添加</h3><p>以我自己博客所选主题yilia为例，在 themes/yilia/路径下的_config.yml文件中，添加disqus相关项 <code>disqus_shortname: ErryLee</code>，ErryLee为你在Disqus上配置的site的shorname（接下来会配置shortname），Disqus的配置步骤如下:</p>
-<p><a href="https://blog.disqus.com/" target="_blank" rel="external">Disqus网址</a>，注册完账号登录后点击右上角Home跳转到主页，然后点击齿轮按钮选择<a href="https://disqus.com/features/engage/" target="_blank" rel="external">Add Dusqus To Site</a>，跳转后拉到页面最下方，点<a href="https://disqus.com/profile/signup/" target="_blank" rel="external">GET STARTED</a>，再次跳转后选择<a href="https://disqus.com/admin/create/" target="_blank" rel="external">I want to install Disqus on my site</a>，然后在新页面中填写你的github page的地址、类型和语言，如下图：</p>
+<h3 id="Disqus评论模块的添加"><a href="#Disqus评论模块的添加" class="headerlink" title="Disqus评论模块的添加"></a>Disqus评论模块的添加</h3><p>以我自己博客所选主题yilia为例，在 themes/yilia/路径下的_config.yml文件中，disqus设置为真<code>disqus: true</code>，并添加disqus相关项 <code>disqus_shortname: ErryLee</code>，ErryLee为你在Disqus上配置的site的shorname（接下来会配置shortname），Disqus的配置步骤如下:</p>
+<p><a href="https://blog.disqus.com/" target="_blank" rel="external">Disqus网址</a>，注册完账号登录后点击右上角Home跳转到主页，然后点击齿轮按钮选择<a href="https://disqus.com/features/engage/" target="_blank" rel="external">Add Dusqus To Site</a>，跳转后拉到页面最下方，点<a href="https://disqus.com/profile/signup/" target="_blank" rel="external">GET STARTED</a>，再次跳转后选择<a href="https://disqus.com/admin/create/" target="_blank" rel="external">I want to install Disqus on my site</a>，然后在新页面中填写你的website name、type和language，如下图：</p>
 <p><img src="/images/hexo/disqus2.png" alt="disqus"></p>
 <p>创建成功后，在新页面点击Install Disqus，Platform选择为Universal Code，拉到页面最下面点击按钮即可。</p>
 <p>然后点击Configure Disqus，将Website Name改为你想要的名称，我的为ErryLee，URL设置为你的Github page地址，然后完成。</p>
