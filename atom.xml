@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ErryLee的博客</title>
+  <subtitle>小李子的后花园</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-06-15T02:58:44.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Erry Lee</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Github博客教程</title>
+    <link href="http://yoursite.com/2017/06/14/Github%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2017/06/14/Github博客教程/</id>
+    <published>2017-06-14T06:47:48.000Z</published>
+    <updated>2017-06-15T02:58:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 文章主要描述了利用github page，hexo静态博客框架以及disqus来搭建个人静态博客的详细步骤。&lt;br&gt; github page用来搭建博客的主页，hexo用来更改博客主题、发布文章等等，并通过配置文件和Disqus来添加评论功能。&lt;br&gt; 具体步骤如下&lt;/p
+    
+    </summary>
+    
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="disqus" scheme="http://yoursite.com/tags/disqus/"/>
+    
+  </entry>
+  
+</feed>
