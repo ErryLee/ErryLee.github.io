@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>小李子的博客</title>
-  <subtitle>小李子新建的后花园</subtitle>
+  <title>Erry Lee的中文博客</title>
+  <subtitle>Erry Lee的后花园</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://errylee.coding.me/"/>
