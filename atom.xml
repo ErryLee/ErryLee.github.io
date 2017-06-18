@@ -4,9 +4,9 @@
   <subtitle>小李子新建的后花园</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://errylee.github.io/"/>
+  <link href="http://errylee.coding.me/"/>
   <updated>2017-06-18T10:28:51.000Z</updated>
-  <id>https://errylee.github.io/</id>
+  <id>http://errylee.coding.me/</id>
   
   <author>
     <name>Erry Lee</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>第二篇</title>
-    <link href="https://errylee.github.io/2017/06/18/%E7%AC%AC%E4%BA%8C%E7%AF%87/"/>
-    <id>https://errylee.github.io/2017/06/18/第二篇/</id>
+    <link href="http://errylee.coding.me/2017/06/18/%E7%AC%AC%E4%BA%8C%E7%AF%87/"/>
+    <id>http://errylee.coding.me/2017/06/18/第二篇/</id>
     <published>2017-06-18T10:28:51.000Z</published>
     <updated>2017-06-18T10:28:51.000Z</updated>
     
@@ -31,8 +31,8 @@
   
   <entry>
     <title>GithubPages + Hexo + Disqus博客教程</title>
-    <link href="https://errylee.github.io/2017/06/14/Github%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
-    <id>https://errylee.github.io/2017/06/14/Github博客教程/</id>
+    <link href="http://errylee.coding.me/2017/06/14/Github%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
+    <id>http://errylee.coding.me/2017/06/14/Github博客教程/</id>
     <published>2017-06-14T06:47:48.000Z</published>
     <updated>2017-06-18T09:17:38.000Z</updated>
     
@@ -43,11 +43,11 @@
     </summary>
     
     
-      <category term="github" scheme="https://errylee.github.io/tags/github/"/>
+      <category term="github" scheme="http://errylee.coding.me/tags/github/"/>
     
-      <category term="hexo" scheme="https://errylee.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://errylee.coding.me/tags/hexo/"/>
     
-      <category term="博客" scheme="https://errylee.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://errylee.coding.me/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
