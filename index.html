@@ -209,21 +209,13 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="webpack2和angular2搭建的项目"><a href="#webpack2和angular2搭建的项目" class="headerlink" title="webpack2和angular2搭建的项目"></a>webpack2和angular2搭建的项目</h1><p>github地址:<a href="https://github.com/ErryLee/AW" target="_blank" rel="external">项目链接</a></p>
+        <p>github地址:<a href="https://github.com/ErryLee/AW" target="_blank" rel="external">项目链接</a></p>
 <ul>
 <li><code>npm install</code>，安装依赖包</li>
-<li><code>npm run dev</code>，启动本地工程，在localhost:1699进行预览</li>
-</ul>
-<h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;name&quot;: &quot;angular-webpack&quot;,</div><div class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</div><div class="line">  &quot;description&quot;: &quot;webpack2 &amp;amp; angular2&quot;,</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;dev&quot;: &quot;babel-node ./src/config/dev.js&quot;</div><div class="line">  &#125;,</div><div class="line">  &quot;author&quot;: &quot;Travis Lee&quot;,</div><div class="line">  &quot;license&quot;: &quot;ISC&quot;,</div><div class="line">  &quot;dependencies&quot;: &#123;</div><div class="line">    &quot;@angular/common&quot;: &quot;~4.0.0&quot;,</div><div class="line">    &quot;@angular/compiler&quot;: &quot;~4.0.0&quot;,</div><div class="line">    &quot;@angular/core&quot;: &quot;~4.0.0&quot;,</div><div class="line">    &quot;@angular/forms&quot;: &quot;~4.0.0&quot;,</div><div class="line">    &quot;@angular/http&quot;: &quot;~4.0.0&quot;,</div><div class="line">    &quot;@angular/platform-browser&quot;: &quot;~4.0.0&quot;,</div><div class="line">    &quot;@angular/platform-browser-dynamic&quot;: &quot;~4.0.0&quot;,</div><div class="line">    &quot;@angular/router&quot;: &quot;~4.0.0&quot;,</div><div class="line">    &quot;core-js&quot;: &quot;^2.4.1&quot;,</div><div class="line">    &quot;es6-shim&quot;: &quot;^0.35.3&quot;,</div><div class="line">    &quot;reflect-metadata&quot;: &quot;^0.1.8&quot;,</div><div class="line">    &quot;rxjs&quot;: &quot;5.0.1&quot;,</div><div class="line">    &quot;zone.js&quot;: &quot;^0.8.4&quot;</div><div class="line">  &#125;,</div><div class="line">  &quot;devDependencies&quot;: &#123;</div><div class="line">    &quot;babel-core&quot;: &quot;^6.25.0&quot;,</div><div class="line">    &quot;babel-loader&quot;: &quot;^7.1.0&quot;,</div><div class="line">    &quot;babel-preset-es2015&quot;: &quot;^6.24.1&quot;,</div><div class="line">    &quot;clean-webpack-plugin&quot;: &quot;^0.1.16&quot;,</div><div class="line">    &quot;css-loader&quot;: &quot;^0.28.4&quot;,</div><div class="line">    &quot;extract-text-webpack-plugin&quot;: &quot;^2.1.2&quot;,</div><div class="line">    &quot;path&quot;: &quot;^0.12.7&quot;,</div><div class="line">    &quot;style-loader&quot;: &quot;^0.18.2&quot;,</div><div class="line">    &quot;ts-loader&quot;: &quot;^2.1.0&quot;,</div><div class="line">    &quot;typescript&quot;: &quot;^2.3.4&quot;,</div><div class="line">    &quot;typings&quot;: &quot;^2.1.1&quot;,</div><div class="line">    &quot;uglifyjs-webpack-plugin&quot;: &quot;^0.4.6&quot;,</div><div class="line">    &quot;webpack&quot;: &quot;^2.6.1&quot;,</div><div class="line">    &quot;webpack-dev-server&quot;: &quot;^2.5.0&quot;,</div><div class="line">    &quot;webpack-merge&quot;: &quot;^4.1.0&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="webpack配置文件开发版："><a href="#webpack配置文件开发版：" class="headerlink" title="webpack配置文件开发版："></a>webpack配置文件开发版：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">import path from &apos;path&apos;</div><div class="line">import config from &quot;./webpack.config&quot;</div><div class="line">import merge from &quot;webpack-merge&quot;</div><div class="line">import webpack from &quot;webpack&quot;</div><div class="line">import webpackDevServer from &quot;webpack-dev-server&quot;</div><div class="line">import &#123; format &#125; from &apos;util&apos;</div><div class="line"></div><div class="line">let PORT = 1699;</div><div class="line">let PUBLIC_PATH = &quot;http://localhost:&quot; + PORT + &quot;/&quot;;</div><div class="line">let webpackConifg = merge(config, &#123;</div><div class="line">    devtool: &quot;source-map&quot;,</div><div class="line">    //debug: true, webpack2 已切换到plugins中，据说在3中将取消</div><div class="line">    entry: &#123;</div><div class="line">        main: [</div><div class="line">            format(&quot;webpack-dev-server/client?%s&quot;, PUBLIC_PATH),</div><div class="line">            &quot;webpack/hot/dev-server&quot;,</div><div class="line">            &quot;./src/main.ts&quot;</div><div class="line">        ]</div><div class="line">    &#125;,</div><div class="line">    output: &#123;</div><div class="line">        path: path.resolve(__dirname, &apos;../../dist&apos;),</div><div class="line">        publicPath: PUBLIC_PATH,</div><div class="line">        filename: &apos;[name].js&apos;</div><div class="line">    &#125;,</div><div class="line">    plugins: [</div><div class="line">        new webpack.HotModuleReplacementPlugin()</div><div class="line">    ]</div><div class="line">&#125;)</div><div class="line">const compiler = webpack(webpackConifg);</div><div class="line">new webpackDevServer(compiler, &#123;</div><div class="line">    inline: true,</div><div class="line">    hot: true,</div><div class="line">    port: PORT,</div><div class="line">    stats: &#123;</div><div class="line">        colors: true</div><div class="line">    &#125;</div><div class="line">&#125;).listen(PORT, &apos;localhost&apos;, (err) =&gt; &#123;</div><div class="line">    console.log(123)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>搭建中遇到的问题：</p>
-<ul>
-<li><p><code>The URL &#39;localhost:1699/sockjs-node&#39; is invalid</code>，<br>该问题是由于webpack配置文件中的publicPath前边没有加<a href="http://，导致url解析失败" target="_blank" rel="external">http://，导致url解析失败</a></p>
-</li>
-<li><p><code>Uncaught reflect-metadata shim is required when using class decorators</code>，<br>这个问题是由于main.ts文件中没有引入 reflect-metadata和zone.js</p>
-</li>
-</ul>
-
+<li><code>npm run dev</code>，启动本地工程，在localhost:1699进行预览
+        
+          <a class="article-more-a" href="/2017/06/20/第二篇/#more">more >></a>
+        
       
 
       
@@ -266,53 +258,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/06/20/第二篇/">阅读全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-webpack2-D-angular2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/19/webpack2-D-angular2/">webpack2&amp;D+angular2</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/19/webpack2-D-angular2/" class="archive-article-date">
-  	<time datetime="2017-06-19T08:05:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/19/webpack2-D-angular2/">阅读全文 >></a>
         </p>
       
 
