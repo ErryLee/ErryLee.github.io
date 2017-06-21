@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://errylee.coding.me/"/>
-  <updated>2017-06-18T11:02:37.000Z</updated>
+  <updated>2017-06-21T10:42:31.000Z</updated>
   <id>http://errylee.coding.me/</id>
   
   <author>
@@ -16,20 +16,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>第二篇</title>
-    <link href="http://errylee.coding.me/2017/06/18/%E7%AC%AC%E4%BA%8C%E7%AF%87/"/>
-    <id>http://errylee.coding.me/2017/06/18/第二篇/</id>
-    <published>2017-06-18T10:28:51.000Z</published>
-    <updated>2017-06-18T11:02:37.000Z</updated>
+    <title>用webpack2搭建angular2的项目</title>
+    <link href="http://errylee.coding.me/2017/06/20/%E7%AC%AC%E4%BA%8C%E7%AF%87/"/>
+    <id>http://errylee.coding.me/2017/06/20/第二篇/</id>
+    <published>2017-06-20T10:28:51.000Z</published>
+    <updated>2017-06-21T10:42:31.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;webpack2和angular2搭建的项目&quot;&gt;&lt;a href=&quot;#webpack2和angular2搭建的项目&quot; class=&quot;headerlink&quot; title=&quot;webpack2和angular2搭建的项目&quot;&gt;&lt;/a&gt;webpack2和angular2搭建的
+    
+    </summary>
+    
+      <category term="webpack2" scheme="http://errylee.coding.me/categories/webpack2/"/>
+    
+    
+      <category term="webpack2" scheme="http://errylee.coding.me/tags/webpack2/"/>
+    
+      <category term="angular2" scheme="http://errylee.coding.me/tags/angular2/"/>
+    
+      <category term="typescript" scheme="http://errylee.coding.me/tags/typescript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack2&amp;D+angular2</title>
+    <link href="http://errylee.coding.me/2017/06/19/webpack2-D-angular2/"/>
+    <id>http://errylee.coding.me/2017/06/19/webpack2-D-angular2/</id>
+    <published>2017-06-19T08:05:23.000Z</published>
+    <updated>2017-06-19T08:05:23.000Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="第一个CG" scheme="http://errylee.coding.me/categories/%E7%AC%AC%E4%B8%80%E4%B8%AACG/"/>
-    
-    
-      <category term="随笔" scheme="http://errylee.coding.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   

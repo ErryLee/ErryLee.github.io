@@ -4,20 +4,39 @@
 
     
   <url>
-    <loc>http://errylee.coding.me/2017/06/18/%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
-    <lastmod>2017-06-18T11:02:37.000Z</lastmod>
+    <loc>http://errylee.coding.me/2017/06/20/%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
+    <lastmod>2017-06-21T10:42:31.000Z</lastmod>
     <data>
         <display>
-        <title>第二篇</title>
-        <pubTime>2017-06-18T10:28:51.000Z</pubTime>
+        <title>用webpack2搭建angular2的项目</title>
+        <pubTime>2017-06-20T10:28:51.000Z</pubTime>
         
-        <tag>随笔</tag>
+        <tag>webpack2</tag>
+         
+        <tag>angular2</tag>
+         
+        <tag>typescript</tag>
          
          
            
              
-              <breadCrumb title="第一个CG" url="http://errylee.coding.me/categories/%E7%AC%AC%E4%B8%80%E4%B8%AACG/"/>
+              <breadCrumb title="webpack2" url="http://errylee.coding.me/categories/webpack2/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://errylee.coding.me/2017/06/19/webpack2-D-angular2/</loc>
+    <lastmod>2017-06-19T08:05:23.000Z</lastmod>
+    <data>
+        <display>
+        <title>webpack2&D+angular2</title>
+        <pubTime>2017-06-19T08:05:23.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>

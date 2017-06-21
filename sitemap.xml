@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://errylee.coding.me/2017/06/18/%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
+    <loc>http://errylee.coding.me/2017/06/20/%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
     
-    <lastmod>2017-06-18T11:02:37.000Z</lastmod>
+    <lastmod>2017-06-21T10:42:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://errylee.coding.me/2017/06/19/webpack2-D-angular2/</loc>
+    
+    <lastmod>2017-06-19T08:05:23.000Z</lastmod>
     
   </url>
   
