@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://errylee.coding.me/"/>
-  <updated>2017-07-10T03:57:54.000Z</updated>
+  <updated>2017-07-10T04:00:42.000Z</updated>
   <id>http://errylee.coding.me/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://errylee.coding.me/2017/07/10/java-%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F%E8%BD%AC%E5%8C%96/"/>
     <id>http://errylee.coding.me/2017/07/10/java-图片格式转化/</id>
     <published>2017-07-10T02:00:25.000Z</published>
-    <updated>2017-07-10T03:57:54.000Z</updated>
+    <updated>2017-07-10T04:00:42.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;在一次调试考试系统bug时遇到的问题，功能是word录入一些题目，解析其中的数学公式转为浏览器可显示的图片。&lt;br&gt;正常的最新版的word插入的公式是DocumentFormat.OpenXml.Math.OfficeMath类，域，&lt;br&gt;这时主要是通过&lt;em&gt;MathM
+      &lt;p&gt;在一次调试考试系统bug时遇到的问题，功能是word录入一些题目，解析其中的数学公式转为浏览器可显示的图片。&lt;br&gt;正常的最新版的word插入的公式是DocumentFormat.OpenXml.Math.OfficeMath类，&lt;br&gt;
     
     </summary>
     
