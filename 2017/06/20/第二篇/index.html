@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://errylee.coding.me/2017/06/20/第二篇/index.html">
 <meta property="og:site_name" content="Erry Lee的中文博客">
 <meta property="og:description" content="github地址:项目链接  npm install，安装依赖包 npm run dev，启动本地工程，在localhost:1699进行预览">
-<meta property="og:updated_time" content="2017-06-21T10:44:01.000Z">
+<meta property="og:updated_time" content="2017-07-10T01:58:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用webpack2搭建angular2的项目">
 <meta name="twitter:description" content="github地址:项目链接  npm install，安装依赖包 npm run dev，启动本地工程，在localhost:1699进行预览">
@@ -218,7 +218,7 @@ var _hmt = _hmt || [];
 <h2 id="webpack配置文件开发版："><a href="#webpack配置文件开发版：" class="headerlink" title="webpack配置文件开发版："></a>webpack配置文件开发版：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">import path from &apos;path&apos;</div><div class="line">import config from &quot;./webpack.config&quot;</div><div class="line">import merge from &quot;webpack-merge&quot;</div><div class="line">import webpack from &quot;webpack&quot;</div><div class="line">import webpackDevServer from &quot;webpack-dev-server&quot;</div><div class="line">import &#123; format &#125; from &apos;util&apos;</div><div class="line"></div><div class="line">let PORT = 1699;</div><div class="line">let PUBLIC_PATH = &quot;http://localhost:&quot; + PORT + &quot;/&quot;;</div><div class="line">let webpackConifg = merge(config, &#123;</div><div class="line">    devtool: &quot;source-map&quot;,</div><div class="line">    //debug: true, webpack2 已切换到plugins中，据说在3中将取消</div><div class="line">    entry: &#123;</div><div class="line">        main: [</div><div class="line">            format(&quot;webpack-dev-server/client?%s&quot;, PUBLIC_PATH),</div><div class="line">            &quot;webpack/hot/dev-server&quot;,</div><div class="line">            &quot;./src/main.ts&quot;</div><div class="line">        ]</div><div class="line">    &#125;,</div><div class="line">    output: &#123;</div><div class="line">        path: path.resolve(__dirname, &apos;../../dist&apos;),</div><div class="line">        publicPath: PUBLIC_PATH,</div><div class="line">        filename: &apos;[name].js&apos;</div><div class="line">    &#125;,</div><div class="line">    plugins: [</div><div class="line">        new webpack.HotModuleReplacementPlugin()</div><div class="line">    ]</div><div class="line">&#125;)</div><div class="line">const compiler = webpack(webpackConifg);</div><div class="line">new webpackDevServer(compiler, &#123;</div><div class="line">    inline: true,</div><div class="line">    hot: true,</div><div class="line">    port: PORT,</div><div class="line">    stats: &#123;</div><div class="line">        colors: true</div><div class="line">    &#125;</div><div class="line">&#125;).listen(PORT, &apos;localhost&apos;, (err) =&gt; &#123;</div><div class="line">    console.log(123)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <p>搭建中遇到的问题：</p>
 <ul>
-<li><p><code>The URL &#39;localhost:1699/sockjs-node&#39; is invalid</code>，<br>该问题是由于webpack配置文件中的publicPath前边没有加<a href="http://，导致url解析失败" target="_blank" rel="external">http://，导致url解析失败</a></p>
+<li><p><code>The URL &#39;localhost:1699/sockjs-node&#39; is invalid</code>，<br>该问题是由于webpack配置文件中的publicPath前边没有加协议头http，导致url解析失败</p>
 </li>
 <li><p><code>Uncaught reflect-metadata shim is required when using class decorators</code>，<br>这个问题是由于main.ts文件中没有引入 reflect-metadata和zone.js</p>
 </li>
@@ -480,18 +480,6 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">webpack2</a>
               </li>
              
@@ -501,6 +489,18 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">typescript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
             
             <div class="clearfix"></div>
