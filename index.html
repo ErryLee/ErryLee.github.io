@@ -189,6 +189,66 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-java-图片格式转化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/10/java-图片格式转化/">java 图片格式转化 wmf,emf -&gt; svg,png</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/10/java-图片格式转化/" class="archive-article-date">
+  	<time datetime="2017-07-10T02:00:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在一次调试考试系统bug时遇到的问题，功能是word录入一些题目，解析其中的数学公式转为浏览器可显示的图片。<br>正常的最新版的word插入的公式是DocumentFormat.OpenXml.Math.OfficeMath类，域，<br>这时主要是通过<em>MathML渲染器</em><code>Jeuclid</code>来将文档中的数学公式xml转换为png。<br>但是当使用旧版本的word时，插入的公式为objectElement形式，这时上面提到的方法就不能用了，<br>仔细查看word中包含数学公式的xml片段，发现其中包含一个<v:imagedata>Element，并且每个标签上都带有一个r:id属性，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">&lt;w:object w:dxaOrig=&quot;2280&quot; w:dyaOrig=&quot;620&quot; w14:anchorId=&quot;271EC68A&quot;&gt;</div><div class="line">    &lt;v:shapetype id=&quot;_x0000_t75&quot; coordsize=&quot;21600,21600&quot; o:spt=&quot;75&quot; o:preferrelative=&quot;t&quot; path=&quot;m@4@5l@4@11@9@11@9@5xe&quot; filled=&quot;f&quot; stroked=&quot;f&quot;&gt;</div><div class="line">      &lt;v:stroke joinstyle=&quot;miter&quot;/&gt;</div><div class="line">      &lt;v:formulas&gt;</div><div class="line">        &lt;v:f eqn=&quot;if lineDrawn pixelLineWidth 0&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;sum @0 1 0&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;sum 0 0 @1&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;prod @2 1 2&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;prod @3 21600 pixelWidth&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;prod @3 21600 pixelHeight&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;sum @0 0 1&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;prod @6 1 2&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;prod @7 21600 pixelWidth&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;sum @8 21600 0&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;prod @7 21600 pixelHeight&quot;/&gt;</div><div class="line">        &lt;v:f eqn=&quot;sum @10 21600 0&quot;/&gt;</div><div class="line">      &lt;/v:formulas&gt;</div><div class="line">      &lt;v:path o:extrusionok=&quot;f&quot; gradientshapeok=&quot;t&quot; o:connecttype=&quot;rect&quot;/&gt;</div><div class="line">      &lt;o:lock v:ext=&quot;edit&quot; aspectratio=&quot;t&quot;/&gt;</div><div class="line">    &lt;/v:shapetype&gt;</div><div class="line">    &lt;v:shape id=&quot;_x0000_i1025&quot; type=&quot;#_x0000_t75&quot; style=&quot;width:114pt;height:31.35pt&quot; o:ole=&quot;&quot;&gt;</div><div class="line">      &lt;v:imagedata r:id=&quot;rId6&quot; o:title=&quot;&quot;/&gt;</div><div class="line">    &lt;/v:shape&gt;</div><div class="line">    &lt;o:OLEObject Type=&quot;Embed&quot; ProgID=&quot;Equation.3&quot; ShapeID=&quot;_x0000_i1025&quot; DrawAspect=&quot;Content&quot; ObjectID=&quot;_1560188948&quot; r:id=&quot;rId7&quot;/&gt;</div><div class="line">  &lt;/w:object&gt;</div></pre></td></tr></table></figure></v:imagedata></p>
+<p>通过查看XWPFDocument(POI提供的word文档解析)的API可以获取文档的所有图片内容</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-java -wmf -svg -batik -X11</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/10/java-图片格式转化/">阅读全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-第二篇" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -431,18 +491,6 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">webpack2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">angular2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">typescript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
@@ -452,6 +500,22 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-java -wmf -svg -batik -X11</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">webpack2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">angular2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">typescript</a>
               </li>
             
             <div class="clearfix"></div>
