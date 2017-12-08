@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://errylee.coding.me/"/>
-  <updated>2017-07-10T04:05:29.000Z</updated>
+  <updated>2017-07-25T09:47:08.000Z</updated>
   <id>http://errylee.coding.me/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript中的this</title>
+    <link href="http://errylee.coding.me/2017/07/25/javascript%E4%B8%AD%E7%9A%84this/"/>
+    <id>http://errylee.coding.me/2017/07/25/javascript中的this/</id>
+    <published>2017-07-25T03:12:50.000Z</published>
+    <updated>2017-07-25T09:47:08.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对于前端开发来说，javascript中的this是一个重点，也是一个难点，简单来说this指的是调用函数的对象，但是在真实运用时又存在了各种上下文环境，让我们不是那么容易分辨这个对象到底是谁，下边我们就几个例子来一起讨论。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="this" scheme="http://errylee.coding.me/tags/this/"/>
+    
+      <category term="javascript" scheme="http://errylee.coding.me/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>java 图片格式转化 wmf,emf -&gt; svg,png</title>
